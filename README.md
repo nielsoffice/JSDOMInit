@@ -40,3 +40,23 @@ jQuery(() => {
  
 });
 ```
+
+```JS
+
+// check func exist
+// Check if function exist jQuery 
+function test() {
+  console.log('Welcome to W3Docs');
+}
+//Call the function above if it exists.
+if (typeof test === "function") {
+  test();
+}
+
+// Check if function exist Vanilla 
+function abc(){
+}
+!!window.abc; // return true
+!!window.abcd; // return false
+
+```
