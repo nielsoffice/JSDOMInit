@@ -2,6 +2,29 @@
 JS DOM init
 
 ```JS
+ jQuery(() => {
+	
+    const __content = function( objectElem = {} ) { this.target = objectElem; }	
+    
+    __content.prototype.init = function() {
+       
+        let $__structure = this.target; 
+
+        console.log($__structure);
+    }	
+        
+   // init 
+   const __app = function( oe ) { new __content( oe ).init(); }
+    
+   __app({ target  :  '.structure' });
+    
+ });
+
+
+
+```
+
+```JS
 jQuery(() => {
 	
  const NielsOfficeHover = function( objectElem = {} ) {
